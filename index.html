@@ -5,7 +5,32 @@
 	<link rel="stylesheet" href="Styles/style1.css">
 </head>
 
-<body>
+<body onload="myFunction()">
+	<div id="loader"></div>
 	
+	<div id="firstContent">
+		
+		<div class="firstText"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.  </div>
+
+		<button class="btn">START</button>
+		
+	</div>
+
+	
+	<div class="bg1"></div>
+
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 500);
+}
+
+function showPage() {
+  document.getElementById("firstContent").style.display = "block";
+  document.getElementById("loader").style.display = "none";
+
+}
+</script>
 </body>
 </html>

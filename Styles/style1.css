@@ -1,9 +1,105 @@
-body{
-	  background-image: url("background1.jpg");
+
+	body, html {
+    height: 100%;
+    margin: 0;
+}  
+	  
+
+
+.bg1{
+	background-image: url(../1.jpg);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body .btn{
+	
+	margin-top: 175px;
+	margin-left: 25%;
+    background-color: #0B0B3B; /*dark blue*/
+   	opacity: 0.8;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    cursor: pointer;
+	letter-spacing: 1px;
+	border: 2px solid white;
+    font-size: 20px;
+	font-family: verdana;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
 }
 
-
-
-p{
-	color: red;
+body .btn:hover{
+	background-color:  #2E2EFE; /* blue */
 }
+
+body .firstText{	
+	position: relative;
+	max-width: 550px;
+	font-style: oblique;
+	letter-spacing: 0.5px;
+	font-size: 24px;
+  	margin-left: 10%;
+    margin-top: 5%;
+	color: white;
+	-webkit-transition-duration: 0.3s; /* Safari */
+    transition-duration: 0.3s;
+}
+
+body .firstText:hover{
+text-shadow: 3px 3px 8px white;
+}
+
+body #firstContent{
+	display: none;
+    position: absolute;
+	height: 300px;
+	width: 50%;
+	min-width: 400px;
+	margin-top: 100px;
+	margin-left: 20%;
+	margin-right: 20%;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 0.8s;
+  animation-name: animatebottom;
+  animation-duration: 0.8s;
+}
+
+#loader {
+  position: absolute;
+  z-index: 1;
+  margin-top: 30%;
+  margin-left: 30%;
+  border: 20px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 20px solid #3498db;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+
+@-webkit-keyframes animatebottom {
+  from { bottom:0px; opacity:0 } 
+  to { bottom:36%; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:0px; opacity:0 } 
+  to{ bottom:36%; opacity:1 }
+}
+
