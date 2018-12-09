@@ -7,7 +7,7 @@ body{
   background-color: transparent;
   top: 0;
   width: 443px;
-  margin:0 auto;
+  margin: 0px auto;
 }
 
 .navbar a {
@@ -131,53 +131,71 @@ width: 300px;
 }
 
 .aboutContent{
-  background-color: white;
+  background-color: transparent;
   margin: 20px auto; 
     position: relative; 
   width: 90%;
+  height: 600px;
   
   
 }
 
 #article1{
-  background-color: white;
-  margin: 20px ;
+  background-color: #013ADF;
+  margin: 10px ;
   margin-top: 20px; 
   float:left;
  position: relative; 
-  font-size: 50px;   
-  color: red;
+ padding: 10px;
+  font-size: 25px;   
+  color: black;
   font-weight: 1000;
-  width: 350px;
-  height: 500px;
+  width: 340px;
+  height: 200px;
+   -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
 
 }
+
+
 #article2{
-  background-color: blue;
-  margin: 20px ;
+  background-color: #AEB404;
+  margin: 10px ;
   margin-top: 20px; 
   float:left;
  position: relative; 
-  font-size: 50px;   
-  color: red;
+ padding: 10px;
+  font-size: 25px;   
+  color: black;
   font-weight: 1000;
-  width: 350px;
-  height: 500px;
+  width: 340px;
+  height: 200px;
+   -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
 
 }
 #article3{
-  background-color: black;
-  margin: 20px ;
+  background-color: white;
+  margin: 10px ;
   margin-top: 20px; 
   float:left;
  position: relative; 
-  font-size: 50px;   
-  color: red;
+ padding: 10px;
+  font-size: 25px;   
+  color: black;
   font-weight: 1000;
-  width: 350px;
-  height: 500px;
+  width: 340px;
+  height: 200px;
+   -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
 
 }
 #article1:hover{
-  margin-top: -5px;
+  height: 500px;
+}
+#article2:hover{
+  height: 500px;
+}
+#article3:hover{
+  height: 500px;
 }
