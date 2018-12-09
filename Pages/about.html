@@ -2,16 +2,53 @@
 <html>
 <head>
 	<title>ABOUT</title>
+	<link rel="stylesheet" href="../Styles/style2.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 
-<ul>
-	<li><a href="../Pages/home.html"> HOME </a></li>
-	<li><a href="../Pages/about.html"> ABOUT </a></li>
-	<li><a href="../Pages/partnership.html"> PARTNERSHIP </a></li>
-	<li><a href="../Pages/contact.html"> CONTACT </a></li>
-</ul>
+<div class="navbar">
+	<a href="../Pages/home.html"> HOME </a>
+	<a href="../Pages/about.html"> ABOUT </a>
+	<div class="dropdown">
+    <button class="dropbtn">PARTNERSHIP
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">LOCAL</a>
+      <a href="#">INTERNATIONAL</a>
+    </div>
+  </div> 
+	<a href="../Pages/contact.html"> CONTACT </a>
+</div>
 
+<div class="aboutContent"> 
+	<div id="article1"> BASIC <p id="con"></p></div>
+	<div id="article2"> STANDARD </div>
+	<div id="article3"> PREMIUM </div>
+</div>
+	<script >
+		
 	
+    $(document).ready(function(){
+    
+	$("#article1").hover(function(){
+		
+		$( "#article1" ).css( "color", "black" );
+		
+	
+		 document.getElementById("con").innerHTML = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
+		 $("#article1").css("font-size","20px");
+		  $("#article1").css("opacity","1");
+        }, function(){
+		$( "#article1" ).css( "color", "black" );
+			 document.getElementById("con").innerHTML = "";
+		 $("#article1").css("font-size","50px");
+		  $("#article1").css("color","red");
+		   $("#article1").css("opacity","0.3");
+
+    });	});
+	</script>
 </body>
 </html>
