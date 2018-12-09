@@ -2,15 +2,64 @@
 <html>
 <head>
 	<title>HOME</title>
+	<link rel="stylesheet" href="../Styles/style2.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
+<div class="navbar">
+	<a href="../Pages/home.html"> HOME </a>
+	<a href="../Pages/about.html"> ABOUT </a>
+	<a href="../Pages/partnership.html"> PARTNERSHIP </a>
+	<a href="../Pages/contact.html"> CONTACT </a>
+</div>
+<div id="slideshow">
+   <div>
+     <img src="../prva.jpg">
+   </div>
+   <div>
+     <img src="../druga.jpg">
+   </div>
+   <div>
+     <img src="../treca.jpg">
+   </div>
+</div>
 
-<ul>
-	<li><a href="../Pages/home.html"> HOME </a></li>
-	<li><a href="../Pages/about.html"> ABOUT </a></li>
-	<li><a href="../Pages/partnership.html"> PARTNERSHIP </a></li>
-	<li><a href="../Pages/contact.html"> CONTACT </a></li>
-</ul>
+
+	
+<div class="content">
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</div>
+
+<div class="logos">
+	
+     <img src="../logo1.png">
+
+   
+</div>
+<div class="logos">
+	
+     <img src="../logo2.png">
+      
+</div>
+<div class="logos">
+	
+     <img src="../logo3.png">
+      
+</div>
+
+<script >
+	$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+}, 3000);
+</script>
+
 
 	
 </body>
