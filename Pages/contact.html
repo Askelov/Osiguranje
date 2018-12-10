@@ -16,13 +16,48 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">LOCAL</a>
-      <a href="#">INTERNATIONAL</a>
+       <a href="../Pages/partnership.html">LOCAL</a>
+      <a href="../Pages/partnership.html">INTERNATIONAL</a>
     </div>
   </div> 
 	<a href="#"> CONTACT </a>
 </div>
 
-	
+
+<div id="mainCity1"><img src="../Images/bh.jpeg"><p id="bs"> Bosnia</p></img></div>
+<div id="mainCity2"><img src="../Images/sp.png"><p id="sp"> Spain</p></img></div>
+<div id="mainCity3"><img src="../Images/lx.png"><p id="lx"> Luxemburg</p></img></div>
+<div id="mainCity4"><img src="../Images/ge.png"><p id="ge"> Germany</p></img></div>
+
+<script>
+	 $(document).ready(function(){
+	    $("#mainCity1").hover(function(){
+		$("#mainCity1").css("opacity","1");
+		document.getElementById("bs").innerHTML = "Country:Bosnia <br> City:Sarajevo <br> Adress: Street 1 <br>Number:0004673323232";}, function(){
+        document.getElementById("bs").innerHTML = "Bosnia, Sarajevo";
+		   	$("#mainCity1").css("opacity","0.5"); });	});
+
+	$(document).ready(function(){
+		$("#mainCity2").hover(function(){
+		$("#mainCity2").css("opacity","1");
+		document.getElementById("sp").innerHTML = "Country:Spain <br> City:Barcelona <br> Adress: Street 2 <br>Number:0004673323232";}, function(){
+        document.getElementById("sp").innerHTML = "Spain, Barcelona";
+		   $("#mainCity2").css("opacity","0.5"); });	});
+
+	$(document).ready(function(){
+		$("#mainCity3").hover(function(){
+		$("#mainCity3").css("opacity","1");
+	    document.getElementById("lx").innerHTML = "Country:Luxemburg <br> City:Luxemburg <br> Adress: Street 3 <br>Number:0004673323232";}, function(){
+        document.getElementById("lx").innerHTML = "Luxemburg,Luxemburg";
+		$("#mainCity3").css("opacity","0.5"); });	});
+
+	$(document).ready(function(){
+		$("#mainCity4").hover(function(){
+		$("#mainCity4").css("opacity","1");
+		document.getElementById("ge").innerHTML = "Country:Germany <br> City:Berlin <br> Adress: Street 4 <br>Number:0004673323232";}, function(){
+        document.getElementById("ge").innerHTML = "Germany,Berlin";
+		$("#mainCity4").css("opacity","0.5"); });	});
+    
+</script>
 </body>
 </html>

@@ -15,21 +15,21 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">LOCAL</a>
-      <a href="#">INTERNATIONAL</a>
+       <a href="../Pages/partnership.html">LOCAL</a>
+      <a href="../Pages/partnership.html">INTERNATIONAL</a>
     </div>
   </div> 
 	<a href="../Pages/contact.html"> CONTACT </a>
 </div>
 <div id="slideshow">
    <div>
-     <img src="../prva.jpg">
+     <img src="../Images/prva.jpg">
    </div>
    <div>
-     <img src="../druga.jpg">
+     <img src="../Images/druga.jpg">
    </div>
    <div>
-     <img src="../treca.jpg">
+     <img src="../Images/treca.jpg">
    </div>
 </div>
 
@@ -40,36 +40,27 @@
 </div>
 
 <div class="logos">
-	
-     <img src="../logo1.png">
-
-   
+     <img src="../Images/logo1.png">
 </div>
 <div class="logos">
-	
-     <img src="../logo2.png">
-      
+     <img src="../Images/logo2.png"> 
 </div>
 <div class="logos">
-	
-     <img src="../logo3.png">
-      
+     <img src="../Images/logo3.png">    
 </div>
 
 <script >
 	$("#slideshow > div:gt(0)").hide();
 
-setInterval(function() {
-  $('#slideshow > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slideshow');
-}, 3000);
+		setInterval(function() {
+		  $('#slideshow > div:first')
+		    .fadeOut(1000)
+		    .next()
+		    .fadeIn(1000)
+		    .end()
+		    .appendTo('#slideshow');
+		}, 2000);
 </script>
 
-
-	
 </body>
 </html>

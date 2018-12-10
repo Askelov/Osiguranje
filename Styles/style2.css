@@ -52,19 +52,17 @@ img{
     position: relative; 
     width: 60%;  
     padding: 10px; 
-   text-decoration: none;
-  font-size: 17px;
-  color: white;
- font-family: Arial, Helvetica, sans-serif;
-  opacity: 0.9;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.9;
 }
 
 .logos{
-    
     position: relative; 
     float: left;
-  width: 300px; 
-  
+    width: 300px; 
     margin-left: 10%; 
     margin-top: 20px;
     margin-bottom: 10px;
@@ -72,12 +70,14 @@ img{
     -webkit-transition-duration: 0.2s; /* Safari */
     transition-duration: 0.2s;
 }
+
 .logos img{
-width: 300px; 
-  margin:5px;
+    width: 300px; 
+    margin:5px;
 }
+
 .logos:hover{
-  opacity: 1;
+    opacity: 1;
 }
 
 .dropdown {
@@ -92,8 +92,7 @@ width: 300px;
     color: white;
     padding: 14px 16px;
     background-color: inherit;
-      text-decoration: none;
-
+    text-decoration: none;
     font-family: inherit;
     margin: 0;
 }
@@ -133,69 +132,63 @@ width: 300px;
 .aboutContent{
   background-color: transparent;
   margin: 20px auto; 
-    position: relative; 
+  position: relative; 
   width: 90%;
-  height: 600px;
-  
-  
+  height: 600px; 
 }
 
-#article1{
+#article1,#article2,#article3{
   background-color: #013ADF;
   margin: 10px ;
   margin-top: 20px; 
   float:left;
- position: relative; 
- padding: 10px;
+  position: relative; 
+  padding: 10px;
   font-size: 25px;   
   color: black;
   font-weight: 1000;
   width: 340px;
   height: 200px;
-   -webkit-transition-duration: 0.2s; /* Safari */
-    transition-duration: 0.2s;
-
+  -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
 }
-
 
 #article2{
   background-color: #AEB404;
-  margin: 10px ;
-  margin-top: 20px; 
-  float:left;
- position: relative; 
- padding: 10px;
-  font-size: 25px;   
-  color: black;
-  font-weight: 1000;
-  width: 340px;
-  height: 200px;
-   -webkit-transition-duration: 0.2s; /* Safari */
-    transition-duration: 0.2s;
-
 }
 #article3{
   background-color: white;
-  margin: 10px ;
-  margin-top: 20px; 
-  float:left;
- position: relative; 
- padding: 10px;
-  font-size: 25px;   
-  color: black;
-  font-weight: 1000;
-  width: 340px;
-  height: 200px;
+}
+#article1:hover,#article2:hover,#article3:hover{
+  height: 500px;
+}
+
+
+#mainCity1, #mainCity2,#mainCity3, #mainCity4{
+  height: 350px;
+  width: 250px;
+  float: left;
+  background-color: white;
+  border: 2px solid red;
+  margin: 0px auto;
+  margin-left: 5%;
+  margin-top: 5%;
+  opacity: 0.5;
    -webkit-transition-duration: 0.2s; /* Safari */
     transition-duration: 0.2s;
+}
+#mainCity1 #bs,#mainCity2 #sp,#mainCity3 #lx,#mainCity3 #ge{
+  padding: 10px;
+}
 
+#mainCity1:hover,#mainCity2:hover,#mainCity3:hover,#mainCity4:hover{
+  opacity: 1;
 }
-#article1:hover{
+
+#sponsors{
+  margin-top: 20px;
+  width: 90%;
   height: 500px;
-}
-#article2:hover{
-  height: 500px;
-}
-#article3:hover{
-  height: 500px;
+  margin-right: 5%;
+  margin-left: 5%;
 }
